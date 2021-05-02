@@ -14,6 +14,9 @@
 	width: 200px;
 	height: 200px;
 }
+.wrapper{
+	display: none;
+}
 body{
 	justify-content: center;
 	align-items: center;
