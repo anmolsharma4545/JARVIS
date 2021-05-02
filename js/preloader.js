@@ -1,5 +1,6 @@
 var preloader = document.querySelector('.loader');
+var body = document.querySelector('body');
 
-window.addEventListener('load', () => {
+body.addEventListener('load', () => {
     preloader.style.display = 'none';
 })
