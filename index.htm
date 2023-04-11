@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv = "Content-Security-Policy" content = "upgrade-insecure-requests">
+	<title>JARVIS || Speech Recognition</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+	 <!--Import Google Icon Font-->
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	 <!-- Compiled and minified CSS -->
+
+
+</head>
+<body>
+	<style>
+		#Time{
+			font-size: 30px;
+			font-weight: 50px;
+			display: grid;
+			place-content: center;
+			width: 150px;
+			height: 130px;
+			position: absolute;
+			right: 0;
+			top: 20%;
+			background-color: rgba(255, 255, 255,0.2);
+			box-shadow: 5px 5px 5px 5px #0000005b;
+		}
+		hr{
+			width: 100%;
+			height: 1px;
+		}
+		@media screen and (max-width:1000px){
+			#Time{
+				right: 0;
+				top: 60%;
+				font-size: 20px;
+				width: 120px;
+				height: 100px;
+			}
+		}
+	</style>
+	<div class="main-container">
+			<div class="head-container">
+				<h1 class="title">J A R V I S</h1>
+				<h1 id="text">&hearts;&hearts;</h1>
+				<img src="circle-cropped.png" class="talk"/>
+			</div>
+			<br>
+			<br>
+			<div class="info-container">
+				<div class="info_one">
+					<div class="weather-container">
+						<img src="" alt="" class="icon">
+						<h2 class="temp"></h2>
+						<p class="text">Cold</p>
+					</div>
+					
+					<div class="location-container">
+						<h4 class="name">LONDON</h4>
+						<p class="region">UK</p>
+					</div>
+				</div>
+				<div class="info_two">
+					<div id="Time" class="time">
+					</div>
+					
+					<div class="battery-info">
+						<h4 class='b-title' id="battery">Battery</h4>
+						<hr>
+						<p class="percentage">00</p>
+						<h5 class="status">yes</h5>
+					</div>
+				</div>
+			</div>
+				<h3 class="content"></h3>
+				<marquee class="white-text">
+					<i>Keywords:</i>
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Who are you || How are you || Creator || Date || Year || Google || WhatsApp || Instagram || Facebook || Github 
+					|| My Projects || HTML || CSS || JavaScript || jQuery || PHP || Bootstrap || SQL || Python || w3Schools 
+					||  Stack Overflow || Wikipedia || Weather || How to make Tea || Love || Time || My Projects || Gmail || Sing || Youtube
+				</marquee>
+	</div>
+
+		<script src="./js/text-typing.js" defer></script>
+		<script src="./js/time.js" defer></script>
+		<script src="./js/js.js" defer></script>
+		<script src="./js/weather.js" defer></script>
+		<script src="./js/preloader.js"></script>
+	 
+</body>
+</html>
